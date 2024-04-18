@@ -1,0 +1,16 @@
+<view class="body">
+  <image class="bg-image" src="../../images/1.jpg"></image>
+  <view class="question">
+    <!-- pageNumber从0开始 -->
+      <view class="title">{{pageNumber+1}}、{{list[pageNumber].title}}</view>
+      <view class="option">
+        <view 
+         class="option-item {{select === optionList[index]?status:''}} {{select !== correct && optionList[index] === correct ? correct_status : ''}}" bind:tap="selectAnswer" data-option-item="{{optionList[index]}}" 
+        wx:for="{{list[pageNumber].option}}"
+        wx:key="index"
+        >
+            {{optionList[index]}}. {{item}}
+        </view>
+      </view>
+  </view>
+</view>

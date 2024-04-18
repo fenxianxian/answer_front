@@ -1,0 +1,13 @@
+<view class="body">
+      <view class="title">超级排行榜</view>
+      <view class="rank-list">
+            <view class="rank" wx:for="{{rank}}"  wx:key="index">
+                <view class="rank-top">
+                  <image src="{{item.avatarUrl}}" class="avatar" alt="" />
+                  <text class="nickname">{{item.nickName}}</text>
+                  <text class="num">{{item.score}}分</text>
+                </view>
+                <view class="rank-bottom">{{endTime}}</view>
+            </view>
+      </view>
+</view>

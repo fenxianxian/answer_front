@@ -1,0 +1,7 @@
+<view class="body">
+    <view class="title">
+        闯关答题
+    </view>
+    <button class="btn" type="primary" bind:tap="toAnswer" open-type="getUserInfo">去答题</button>
+    <button class="btn" type="primary" bind:tap="toRank">排行榜</button>
+</view>
